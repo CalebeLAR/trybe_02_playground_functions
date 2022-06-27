@@ -1,11 +1,26 @@
-// Desafio 1
-function compareTrue() {
+// Desafio 1 ==============================================================
+function compareTrue(valor1, valor2) {
   // seu código aqui
+
+  if (valor1 === true && valor2 === true) {
+    return true
+  } else {
+    return false
+  }
 }
 
-// Desafio 2
+const girafa = true;
+const elefante = true;
+const macaco = false;
+console.log(compareTrue(girafa,macaco))
+
+
+
+// Desafio 2 ==============================================================
 function calcArea() {
   // seu código aqui
+  
+
 }
 
 // Desafio 3
@@ -64,3 +79,5 @@ module.exports = {
   splitSentence,
   techList,
 };
+
+
