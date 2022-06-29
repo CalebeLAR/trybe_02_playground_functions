@@ -12,20 +12,28 @@ function compareTrue(valor1, valor2) {
 // Desafio 2 ==============================================================
 function calcArea(base, height) {
   // seu código aqui
-  return (base * height) / 2; 
+  area = (base * height) / 2;
+  return area; 
   
 }
 
 // Desafio 3 ==============================================================
 function splitSentence(string) {
   // seu código aqui
-  let arrayDePalavras = string.split(" ", (string.length - 1)) 
-  return arrayDePalavras
+  let arrayDePalavras = string.split(" ", (string.length - 1));
+  return arrayDePalavras;
 }
 
-// Desafio 4
-function concatName() {
+// Desafio 4 ==============================================================
+function concatName(arrayDeStrings) {
   // seu código aqui
+  let ultimoIndice = arrayDeStrings.length - 1
+  let ultimoItem = arrayDeStrings[ultimoIndice];
+  let primeiroItem = arrayDeStrings[0];
+
+  return ultimoItem + ", " + primeiroItem;
+
+  
 }
 
 // Desafio 5
