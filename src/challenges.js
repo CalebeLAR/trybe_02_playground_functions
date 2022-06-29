@@ -27,18 +27,18 @@ function splitSentence(string) {
 // Desafio 4 ==============================================================
 function concatName(arrayDeStrings) {
   // seu código aqui
-  let ultimoIndice = arrayDeStrings.length - 1
+  let ultimoIndice = arrayDeStrings.length - 1;
   let ultimoItem = arrayDeStrings[ultimoIndice];
   let primeiroItem = arrayDeStrings[0];
 
   return ultimoItem + ", " + primeiroItem;
-
-  
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
+  let pontuação = ( wins * 3 + ties * 1 );
+  return pontuação;
 }
 
 // Desafio 6
