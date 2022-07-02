@@ -100,9 +100,9 @@ function fizzBuzz(array) {
   let resposta = [];
   for (let indice = 0; indice < array.length; indice += 1) {
 
-    let elementoArrey = array[indice];
-    let condiçãoPorTres = (elementoArrey % 3 === 0);   //vai sair false ou true
-    let condiçãoPorCinco = (elementoArrey % 5 === 0);
+    let letraString = array[indice];
+    let condiçãoPorTres = (letraString % 3 === 0);   //vai sair false ou true
+    let condiçãoPorCinco = (letraString % 5 === 0);
 
     if (condiçãoPorTres === true && condiçãoPorCinco === true) {
       resposta.push('fizzBuzz');
@@ -118,15 +118,47 @@ function fizzBuzz(array) {
   return resposta;
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
+// Desafio 9 ==============================================================
+function encode(string) {
+  // seu código aqui[
+  let resposta = "";
+  let vogais = ['a', 'e', 'i', 'o', 'u'];
+  let numeros = ["1", "2", "3", "4", "5"];
+  for (let indiceString = 0; indiceString < string.length; indiceString += 1) {
+    let letraString = string[indiceString];
+
+    for (let indiceVogais = 0; indiceVogais < vogais.length; indiceVogais += 1) {
+      let letraVogais = vogais[indiceVogais];
+
+      if (letraString === letraVogais) {
+        letraString = numeros[indiceVogais];
+      }
+    }
+
+    resposta += letraString;
+  }
+  return resposta;
 }
 
-// Desafio 10
+function decode(string) {
+  // seu código aqui
+  let resposta = "";
+  let vogais = ['a', 'e', 'i', 'o', 'u'];
+  let numeros = ["1", "2", "3", "4", "5"];
+  for (let indiceString = 0; indiceString < string.length; indiceString += 1) {
+    let letraString = string[indiceString];
+    for (let indiceNumeros = 0; indiceNumeros < numeros.length; indiceNumeros += 1) {
+      if (letraString === numeros[indiceNumeros]) {
+        letraString = vogais[indiceNumeros];
+      }
+    }
+    resposta += letraString;
+  }
+  return resposta;
+}
+
+
+// Desafio 10 ==============================================================
 function techList() {
   // seu código aqui
 }
