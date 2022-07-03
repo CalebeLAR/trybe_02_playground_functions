@@ -131,7 +131,7 @@ function encode(string) {
       let letraVogais = vogais[indiceVogais];
 
       if (letraString === letraVogais) {
-        letraString = numeros[indiceVogais];
+        letraString = numeros[indiceVogais];     //a letra "o" está na posição 3 do array vogais, ele vai no array de numeros e pega o elemento na mesma posição: 3, e atribui a variavel letra. 
       }
     }
 
@@ -142,25 +142,26 @@ function encode(string) {
 
 function decode(string) {
   // seu código aqui
-  let resposta = "";
-  let vogais = ['a', 'e', 'i', 'o', 'u'];
-  let numeros = ["1", "2", "3", "4", "5"];
-  for (let indiceString = 0; indiceString < string.length; indiceString += 1) {
-    let letraString = string[indiceString];
-    for (let indiceNumeros = 0; indiceNumeros < numeros.length; indiceNumeros += 1) {
-      if (letraString === numeros[indiceNumeros]) {
-        letraString = vogais[indiceNumeros];
-      }
+    // seu código aqui
+    let resposta = "";
+    let regra = { "a": "1", "e": "2", "i": "3", "o": "4", "u": "5" }
+    for (let letra of string) {
+
+        for (let key in regra) {
+            if (letra === regra[key]) {
+                letra = key;
+            }
+        }
+    resposta += letra;   
     }
-    resposta += letraString;
-  }
-  return resposta;
+    return resposta;
 }
 
 
 // Desafio 10 ==============================================================
-function techList() {
+function techList(array, stryng) {
   // seu código aqui
+
 }
 
 module.exports = {
