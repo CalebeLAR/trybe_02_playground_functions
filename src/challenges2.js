@@ -48,8 +48,19 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lado_a,lado_b, lado_c) {
   // seu código aqui
+  
+  if (lado_a > (lado_b + lado_c) || lado_b > (lado_a + lado_c) || lado_c > (lado_a + lado_b)) {
+    return false;
+
+  } else if (lado_a < Math.abs(lado_b - lado_c) || lado_b < Math.abs(lado_a - lado_c) || lado_c < Math.abs(lado_a - lado_b)) {
+    return false;
+
+  } else {
+    return true;
+  }
+
 }
 
 // Desafio 13
