@@ -64,8 +64,22 @@ function triangleCheck(lado_a,lado_b, lado_c) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(pedido) {
   // seu código aqui
+  let numeroLetra = {"1":1 ,"2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9}
+  let num_copos = 0;
+  for (letra of pedido) {
+    for (key in numeroLetra) {
+      if (letra === key ) {
+        num_copos += numeroLetra[key];
+      }
+    }
+  }
+  if (num_copos === 1) {
+    return JSON.stringify(num_copos) + " copo de água"
+  } else {
+    return JSON.stringify(num_copos) + " copos de água"
+  }
 }
 
 module.exports = {
