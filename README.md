@@ -64,12 +64,12 @@ instale as dependências:
 ```bash
 npm install
 ```
-> o projeto utiliza a versão 18 do node.
+> use a versão 18 do node.
 
 teste as funções:
 
 ```bash
-git clone git@github.com:CalebeLAR/trybe_02_playground_functions.git
+npm test
 ```
 
 #### 👤 Autor
