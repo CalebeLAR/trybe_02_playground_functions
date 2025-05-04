@@ -71,9 +71,5 @@ teste as funções:
 ```bash
 npm test
 ```
-
-#### 👤 Autor
-[Calebe](https://www.linkedin.com/in/calebeLAR) - [contatocalebelar@email.com](contatocalebelar@email.com) - [calebeLAR](https://github.com/CalebeLAR)
-
 #### 🤝 Contribuição
 Este é um projeto individual desenvolvido como parte do curso de Desenvolvimento Web da Trybe. Pull requests não serão aceitos, mas feedbacks são sempre bem-vindos!
